@@ -4,5 +4,5 @@ validan la tarjeta. <br><br>
 Consideraciones:<br>
 -Lo demás elementos del formulario y de la interfaz no son tomados en cuenta para la validación por ahora.
 
-La interfaz está basada en un diseño tomado de Dribble:
+La interfaz está basada en un diseño tomado de Dribble:<br>
 -Diseño: https://dribbble.com/shots/7905318-Payment-Gateway-Redesign
