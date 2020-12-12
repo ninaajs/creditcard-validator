@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Creditcard Validator</title>
+</head>
+<body>
+    <div id="paymentContainer" class="payment">
+        <div class="payment__header">
+            <div class="payment__detail">Price 
+               <p>1000 <span class="payment__curreny">USD</span></p>
+            </div>
+            <div class="payment__detail">Company 
+               <p>Otto</p>
+            </div>
+        </div>
+        <div class="payment__card">
+            <img src="images/creditcard.png" alt="">
+            <p class="payment__number">Your credit card</p>
+        </div>
+        <div class="payment__info">
+            <form id="" class="form">
+                <div class="form__item">
+                    <input id="creditCardInput" 
+                           class="form__input" 
+                           type="text"
+                           placeholder=" "
+                           maxlength="20"
+                           autocomplete="off">
+                    <label class="form__label" for="card-number">Card number</label>
+                    <div class="form__underline"></div>
+                </div>
+                <div class="form__item">
+                    <input class="form__input" type="password" autocomplete="off" placeholder=" ">
+                    <label class="form__label" for="card-number">Password</label>
+                    <div class="form__underline"></div>
+                </div>
+                <div class="form__row">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <input class="form__input" type="text" autocomplete="off" placeholder=" ">
+                            <label class="form__label" for="card-number">CVV2</label>
+                            <div class="form__underline"></div>
+                        </div>
+                    </div>
+                   <div class="form__column">
+                        <div class="form__item">
+                            <input class="form__input" type="text" autocomplete="off" placeholder=" ">
+                            <label class="form__label" for="card-number">Expiry date</label>
+                            <div class="form__underline"></div>
+                        </div>
+                   </div>
+                </div>
+                <div class="form__item">
+                    <input class="form__input" type="email" autocomplete="off" placeholder=" ">
+                    <label class="form__label" for="card-number">Email address</label>
+                    <div class="form__underline"></div>
+                </div>
+                <div class="payment__record">
+                    <p>Save this card</p>
+                    <label class="radio-label" for="recordCard">
+                        <input id="recordCard" class="input-radio" type="checkbox" checked>
+                        <div class="radio"></div>
+                    </label>
+                </div>
+                <button id="btnPayment" class="btn btn--secondary">Pay now</button>
+            </form>
+        </div>
+    </div>
+    
+    <template id="alertTemplate">
+        <div class="alert">
+            <span class="material-icons alert__icon">${icon}</span>
+            <div class="alert__body">
+                <h4 class="alert__type">${type}</h4>
+                <p class="alert__message">${message}</p>
+            </div>
+        </div>
+    </template>
+    <div class="info-dev">
+        <p>Tenga en cuentra que este proyecto está en desarrollo &lt;/&gt;
+        </p>
+        <ul>
+            <li>Valida la tarjeta con el botón 'Pay now'</li>
+        </ul>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
