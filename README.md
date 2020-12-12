@@ -1,4 +1,4 @@
-# creditcard-validator
+# Credit Card validator
 Tercer proyecto (junior-dev) hecho con vanilla Javascript, se trata de un validador de tarjetas de crédito en la que se utiliza el Algoritmo de Luhn para las funciones
 validan la tarjeta. <br><br>
 Consideraciones:<br>
